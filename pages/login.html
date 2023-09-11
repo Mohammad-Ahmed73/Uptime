@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="../css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/slick.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<section class="signup-section registration-form">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 py-5 registration-form-left d-flex flex-wrap align-items-center">
+					<div class="content-container w-100 mx-auto">
+						<figure class="logo">
+							<img src="../images/logo.png" alt="Logo" class="w-100">
+						</figure>
+						<h1 class="form-title head-h2 fw-bold dark-blue-color pb-3 mb-4 border-bottom">Login</h1>
+						<form action="" class="form-field mb-3 mb-md-5">
+							<div class="field-wrap position-relative mb-4">
+								<input type="email" class="form-control" name="email" placeholder="Email" required />
+							</div>
+							<div class="field-wrap position-relative mb-4">
+								<input type="password" class="form-control password" name="password" placeholder="Password" required />
+								<button type="button" class="password-visibility" onclick="passwordVisibility()">
+									<i class="open fa-regular fa-eye-slash"></i>
+									<i class="close fa-regular fa-eye"></i>
+								</button>
+							</div>
+							<label class="toggle-switch-label paragraph-text-md fw-500 text-capitalize d-flex align-items-center justify-content-end my-4 my-md-5">
+								Stay logged in 
+								<div class="toggle-switch d-inline-block position-relative">
+									<input type="checkbox">
+									<span class="slider"></span>
+								</div>
+							</label>
+							<div class="field-wrap position-relative mt-5 mt-md-0 mb-2">
+								<input type="submit" name="submit" value="Login" class="submit-form-btn">
+							</div>
+							<a href="#" class="text-decoration-none fw-500 paragraph-text-md dark-gray-color">Forgot password?</a>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-6 registration-form-right py-5 flex-wrap align-items-center d-none d-md-flex">
+					<div class="content-container w-100 mx-auto">
+						<h2 class="head-h2 mb-3 text-center">
+							Stay in the know! Here what’s trending on 
+							<b>Uptime Intelligence</b>
+						</h2>
+						<div class="registration-form-slider">
+							<div class="slider-wrapper">
+								<figure class="image mb-3 position-relative bg-white">
+									<img src="../images/slider-image-2.png" alt="slider image" class="w-100 h-100 position-absolute start-0 top-0 object-fit-contain">
+								</figure>
+								<h4 class="head-h4 text-dark mb-2 fw-bold">Users Unprepared for Cloud Outages</h4>
+								<p class="paragraph-text-md text-dark mb-lg-5 mb-3">
+									Data center operators are attentive to their risks from change and extreme weather. They are assessing risk more frequently and focusing more on vulnerabilities, but describe data center sustainability performance as average, compared with other industries.
+								</p>
+							</div>
+							<div class="slider-wrapper">
+								<figure class="image mb-3 position-relative bg-white">
+									<img src="../images/slider-image-1.png" alt="slider image" class="w-100 h-100 position-absolute start-0 top-0 object-fit-contain">
+								</figure>
+								<h4 class="head-h4 text-dark mb-2 fw-bold">Global Data Center Survey 2022</h4>
+								<p class="paragraph-text-md text-dark mb-lg-5 mb-3">
+									The findings in our 12th annual global survey reveal the practices and experiences of data center owners and operators in the areas of performance, resiliency, efficiency and sustainability, staffing and innovative technologies.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="w-100 m-0 text-center align-self-end mt-4">
+				       <h5 class="head-h5 text-dark fw-bold mb-0">
+				       		Not a client?
+				       		<a href="#" class="mx-2 primary-btn primary-small-btn">CONTACT US</a>
+				       		to get access
+				       </h5>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/slick.min.js"></script>
+	<script type="text/javascript" src="../js/custom.js"></script>
+
+	<script type="text/javascript">
+		jQuery('.registration-form-slider').slick({
+		  infinite: true,
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  dots: true,
+		  arrows: false,
+		  autoplay: true,
+		  speed: 500
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profile Setting</title>
+	<link rel="stylesheet" type="text/css" href="../css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/slick.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+
+	<!-- Header -->
+	<header class="header-main d-flex align-items-center justify-content-center top-0 w-100">
+		<nav class="navbar navbar-expand-md w-100 py-md-0 py-2">
+			<div class="container-xxl">
+				<a class="header-left navbar-brand py-2 w-100" href="#">
+					<img src="../images/logo.png" alt="Logo" class="w-100">
+				</a>
+				<div class="header-mobile-btn header-btns w-100 text-end d-block d-md-none py-2">
+					<button type="button" class="btn" id="filter-btn">
+						<i class="fa-solid fa-filter"></i>
+					</button>
+					<button type="button" class="btn" id="search-btn">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</button>
+					<button class="navbar-toggler collapsed toggle-btn btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="open fa-solid fa-bars"></i>
+						<i class="close fa-solid fa-xmark"></i>
+					</button>
+				</div>
+				<div class="header-center w-100 navbar-collapse collapse mx-md-3" id="navbarSupportedContent">
+					<ul class="navbar-nav mx-auto justify-content-around w-100">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Explore
+							</a>
+							<ul class="dropdown-menu border-0 px-md-4 py-md-3 p-0 mt-md-0" aria-labelledby="navbarDropdown">
+								<li class="sub-menu">
+									<ul class="list-unstyled">
+										<li>
+											<a class="dropdown-item" href="#">Resiliency</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Sustainability</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Cloud</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Operations</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Staffing</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Staffing</a>
+										</li>
+									</ul>
+									<a href="#" class="fw-bold dropdown-item">all topics</a>
+								</li>
+								<li class="sub-menu">
+									<ul class="list-unstyled">
+										<li>
+											<a class="dropdown-item" href="#">Flagship reports</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">survey reports</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">intelligence briefings</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">intelligence Updates</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">analyst views</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">webinars</a>
+										</li>
+									</ul>
+									<a href="#" class="fw-bold dropdown-item">all types</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="asks-uptime.html">Ask uptime</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/my-library.html">MY library</a>
+						</li>
+					</ul>
+					<div class="profile-link d-block d-md-none">
+						<a class="link" href="profile.html">Profile</a>
+					</div>
+				</div>
+				<div class="header-right d-flex justify-content-between py-md-2">
+					<div class="search-wrap w-100 me-md-2">
+						<form class="search-field position-relative">
+							<button class="btn" type="submit">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</button>
+							<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+						</form>
+					</div>
+					<a href="#" class="avatar d-none d-md-block">
+						<img src="../images/avatar-img.png" alt="">
+					</a> 
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Body Main Sections -->
+	<div class="py-4 py-lg-5">
+		<div class="container-xxl">
+			<div class="row">
+				<div class="col-md-8 col-xl-7 offset-xl-1 ps-xl-5 pe-xl-4">
+					<div class="row align-items-end mb-4 mb-md-5">
+						<div class="col-sm-8 col-md-12 col-lg-8">
+							<p class="paragraph-text-sm mb-3 fw-normal text-uppercase">PROFILE SETTINGS</p>
+							<h1 class="head-h1 fw-bold text-dark mb-0">ROBERT O’NEAL</h1>
+						</div>
+						<div class="col-6 col-sm-4 col-md-6 col-lg-4 text-end order-1 order-sm-0 order-md-1 order-lg-0">
+							<button type="button" class="primary-btn primary-medium-btn">Log Out</button>
+						</div>
+						<div class="col-6 col-sm-12 col-md-6 col-lg-12 mt-4">
+							<div class="profile-image d-inline-block position-relative">
+								<figure class="image mb-0">
+									<img src="../images/profile-pic.png" alt="profile image" class="w-100">
+								</figure>
+								<button type="button" class="edit-btn bg-white border-0 p-1 rounded-circle d-flex justify-content-center align-items-center position-absolute end-0 bottom-0">
+									<i class="fa-regular fa-pen-to-square"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="form-header pb-4 mb-4 border-bottom border-2">
+						<h6 class="head-h6 black-color text-uppercase fw-bold mb-0">BASIC INFO</h6>
+					</div>
+					<form class="profile-form-field form-field mb-4 mb-md-5">
+						<div class="row">
+							<div class="col-md-6 field-wrap position-relative mb-md-4 mb-3">
+								<label for="fname" class="field-label">FIRST NAME</label>
+								<input type="text" name="fname" class="form-control" id="fname" required>
+							</div>
+							<div class="col-md-6 field-wrap position-relative mb-md-4 mb-3">
+								<label for="lname" class="field-label">Last NAME</label>
+								<input type="text" name="lname" class="form-control" id="lname" required>
+							</div>
+							<div class="col-md-6 field-wrap position-relative mb-md-4 mb-3">
+								<label for="company" class="field-label">COMPANY</label>
+								<input type="text" name="fname" class="form-control" id="fname" required>
+							</div>
+							<div class="col-md-6 field-wrap position-relative mb-md-4 mb-3">
+								<label for="country" class="field-label">COUNTRY</label>
+								<select id="country" class="form-control" required>
+									<option></option>
+								</select>
+							</div>
+							<div class="col-md-6 field-wrap position-relative mb-md-4 mb-3">
+								<label for="title" class="field-label">title</label>
+								<input type="text" name="title" class="form-control" id="title" required>
+							</div>
+							<div class="col-md-6 field-wrap position-relative mb-md-4 mb-3">
+								<label for="mail" class="field-label">email</label>
+								<input type="mail" name="email" class="form-control" id="mail" required>
+							</div>
+							<label class="toggle-switch-label paragraph-text-md fw-500 text-capitalize d-flex align-items-center justify-content-end mb-md-5 mb-4">
+								notifications
+								<div class="toggle-switch d-inline-block position-relative">
+									<input type="checkbox">
+									<span class="slider"></span>
+								</div>
+							</label>
+						</div>
+						<div class="form-btn text-end">
+							<input type="submit" name="submit" value="SAVE" class="primary-btn primary-medium-btn ms-3">
+							<button type="button" class="secondary-btn secondary-medium-btn ms-3">Cancel</button>
+						</div>
+					</form>
+					<div class="form-header pb-4 mb-4 border-bottom border-2">
+						<h6 class="head-h6 black-color text-uppercase fw-bold mb-0">change password</h6>
+					</div>
+					<form class="profile-form-field form-field mb-4 mb-md-5">
+						<div class="row">
+							<div class="col-lg-6 col-md-8">
+								<div class="field-wrap position-relative mb-md-4 mb-3">
+									<input type="password" name="current-password" placeholder="Current password" class="form-control" required>
+									<div class="text-end">
+										<a href="#" class="field-sub-label paragraph-text-md fw-bold dark-gray-color text-decoration-none text-end">Forgot password?</a>
+									</div>
+								</div>
+								<div class="field-wrap position-relative mb-md-4 mb-3">
+									<input type="password" name="new-password" placeholder="New password" class="form-control" required>
+								</div>
+								<div class="field-wrap position-relative mb-md-4 mb-3">
+									<input type="password" name="confirm-password" placeholder="Confirm new password" class="form-control" required>
+								</div>
+							</div>
+						</div>
+						<div class="form-btn text-end">
+							<input type="submit" name="submit" value="Change" class="primary-btn primary-medium-btn ms-3">
+							<button type="button" class="secondary-btn secondary-medium-btn ms-3">Cancel</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-xl-3 col-md-4 ps-xl-5 mb-4 mb-md-0 d-none d-md-block">
+					<div class="latest-posts-wrap w-100 mb-4">
+						<h6 class="post-title paragraph-text text-dark text-capitalize fw-500 mb-3">
+							Latest Intelligence
+						</h6>
+						<ul class="list-unstyled latest-posts-list">
+							<li class="mb-3">
+								<a href="#" class="author-name">Mark Johnson</a>
+								<a href="#" class="post">Sustainability Trends in Southeast Asia</a>
+							</li>
+						</ul>
+						<a href="#" class="see-list text-decoration-none">See the full list</a>
+					</div>
+					<div class="recommended-topics-wrap">
+						<h6 class="paragraph-text text-dark text-capitalize fw-500 mb-3">Recommended Topics</h6>
+						<ul class="list-unstyled recommended-topics-list">
+							<li class="d-inline-block mb-3 me-3">
+								<a href="#">Resiliency</a>
+							</li>
+							<li class="d-inline-block mb-3 me-3">
+								<a href="#">Sustainability</a>
+							</li>
+							<li class="d-inline-block mb-3 me-3">
+								<a href="#">Staffing</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer-main">
+		<div class="footer-top">
+			<div class="container-xxl">
+				<div class="row">
+					<div class="col-lg-7 d-none d-md-block">
+						<div class="row">
+							<div class="col-md-4 mb-md-4 mb-lg-0">
+								<h5 class="footer-menu-title">SITE</h5>
+								<ul class="footer-menu-list list-unstyled">
+									<li>
+										<a href="/">Home</a>
+									</li>
+									<li>
+										<a href="explore-only.html">Explore</a>
+									</li>
+									<li>
+										<a href="asks-uptime.html">Ask Uptime</a>
+									</li>
+									<li>
+										<a href="my-library.html">My Library</a>
+									</li>
+									<li>
+										<a href="profile.html">My Profile</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 mb-md-4 mb-lg-0">
+								<h5 class="footer-menu-title">TOPICS</h5>
+								<ul class="footer-menu-list list-unstyled">
+									<li>
+										<a href="#">Resiliency</a>
+									</li>
+									<li>
+										<a href="#">Sustainability</a>
+									</li>
+									<li>
+										<a href="#">Cloud</a>
+									</li>
+									<li>
+										<a href="#">Operations</a>
+									</li>
+									<li>
+										<a href="#">Staffing</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4 mb-md-4 mb-lg-0">
+								<h5 class="footer-menu-title">COMPANY</h5>
+								<ul class="footer-menu-list list-unstyled">
+									<li>
+										<a href="#">Uptime Institute</a>
+									</li>
+									<li>
+										<a href="#">UI Intelligence</a>
+									</li>
+									<li>
+										<a href="#">Membership</a>
+									</li>
+									<li>
+										<a href="#">Education</a>
+									</li>
+									<li>
+										<a href="#">Professional Services</a>
+									</li>
+									<li>
+										<a href="#">Tier Certification</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="row">
+							<div class="col-lg-5 col-sm-6 col-5">
+								<ul class="main-menu list-unstyled">
+									<li>
+										<a href="#">OUR TEAM</a>
+									</li>
+									<li>
+										<a href="#">CONTACT US</a>
+									</li>
+									<li>
+										<a href="#">NEWS & MEDIA</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-7 col-sm-6 col-7 address-wrap">
+								<h5 class="title mb-3">
+									GLOBAL HEADQUARTERS
+								</h5>
+								<div class="address-content">
+									<b>Uptime Institute</b>
+									<p class="mb-0">
+										405 Lexington Avenue, 9th Floor 
+										<br> 
+										New York, NY 10174 
+										<br>
+										Phone: +1 212 505-3030
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="social-icons list-unstyled mb-0 text-end">
+					<li class="d-inline-block">
+						<a href="#">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+					</li>
+					<li class="d-inline-block">
+						<a href="#">
+							<i class="fa-brands fa-facebook-f"></i>
+						</a>
+					</li>
+					<li class="d-inline-block">
+						<a href="#">
+							<i class="fa-brands fa-linkedin"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom text-center">
+			<div class="container-xxl">
+				<ul class="copyright-menu list-unstyled">
+					<li class="d-inline-block">
+						<a href="#" class="text-white text-decoration-none">Privacy Policy</a>
+					</li>
+					<li class="d-inline-block">
+						<a href="#" class="text-white text-decoration-none">Terms of Service</a>
+					</li>
+					<li class="d-inline-block">
+						<a href="#" class="text-white text-decoration-none">Uptime Institute</a>
+					</li>
+				</ul>
+				<p class="copyright-content mb-0">
+					© Copyright 2022 Uptime Institute, LLC. All rights reserved.
+				</p>
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/slick.min.js"></script>
+	<script type="text/javascript" src="../js/custom.js"></script>
+</body>
+</html>
